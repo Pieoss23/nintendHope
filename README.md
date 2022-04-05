@@ -1,2 +1,2 @@
 # nintendhope
-# Featured.card
+# Featured-card
