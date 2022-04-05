@@ -1,0 +1,24 @@
+* {
+
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+}
+
+:root {
+
+
+--first-color:#e60012; 
+--second-color:#9d1f1b;
+--third-color:#484848;  
+--border-radius: 0.3rem;
+
+}
+
+body {
+
+font-family: 'Mulish', sans-serif;
+font-size:16px;
+color:var(--third-color);
+}
