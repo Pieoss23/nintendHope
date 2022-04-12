@@ -1,19 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+
+
+    --first-color: #e60012;
+    --second-color: #9d1f1b;
+    --third-color: #484848;
+    --border-radius: 0.3rem;
+
+}
+
+
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
 .map_site_section {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+
 }
 
 .map_site_section li {
     list-style: none;
+    font-size: 16px;
+    line-height: 22.4px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 1rem;
+}
+
+.map_site_section a {
+    text-decoration: none;
 }
 
 .social_section {
     background-color: rgb(230, 0, 18);
     padding: 2.25rem 1rem;
     color: rgb(255, 255, 255);
-    display: grid;
-    place-items: center end;
-    -moz-box-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_section svg {
+    border: 1px solid yellow;
+    
+}
+
+.social_section div {
+    grid-template-columns: auto 58px 58px 58px 58px;
+}
+
+.social_section_nintendo_logo {
+    justify-self: start;
+    grid-column: span 1;
+    border: 1px solid green;
+}
+
+.social_section a:link {
+    text-decoration: none;
 }
 
 .copyright_section {
@@ -22,6 +76,9 @@
     text-align: center;
     background-color: rgb(36, 36, 36);
     color: #fff;
+    height: 7rem;
+    margin: auto 0;
+
 }
 
 .footer_legal_link {
@@ -34,8 +91,7 @@
 
 .footer_legal_link li {
     list-style: none;
-    justify-content: start;
-
+    display: inline;
 }
 
 .footer_legal_link a {
@@ -45,11 +101,62 @@
 
 .certified_logo {
     justify-self: end;
-    grid-column: span 3; 
+    grid-column: span 3;
     height: 86px;
     width: 64px;
 }
 
 .certified_section {
     display: grid;
+}
+
+.gaming_system_section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.gaming_system_section img {
+    background-size: cover;
+    width: 100%;
+}
+
+.general_btn {
+    width: 200px;
+    background-color: var(--first-color);
+    border-radius: var(--border-radius);
+    color: #fff;
+    border-style: none;
+    padding: 20px 40px;
+    display: flex;
+    transition: all .2s ease-in-out;
+    justify-content: center;
+}
+
+.general_btn:hover {
+
+    width: 200px;
+    background-color: var(--second-color);
+    border-radius: var(--border-radius);
+    color: #fff;
+    border-style: none;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.online_store_section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.online_store_section img{
+    background-size: cover;
+    width: 100%;
+}
+
+.social_section__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
