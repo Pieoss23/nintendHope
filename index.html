@@ -14,6 +14,10 @@
     <meta name="description" content="Exercise of HTML and CSS." />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b698d991d3.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Nintendhope Team 3</title>
   </head>
@@ -23,86 +27,98 @@
       <div class="top-nav">
         <!-- nav superiore-->
         <div class="top-nav left">
-          <a class="button">
+          <a class="button-logo" href="https://www.nintendo.com">
             <!-- bottone click che porta in home-->
-            <div class="logo">
-              <svg></svg>
-            </div>
+            <img src="/assets/svg/logo_nintendo.svg" alt="nintendo logo" />
           </a>
-          <form>
-            <!-- contiene search bar + all categories -->
+          <!-- contiene search bar + all categories -->
+          <form class="container-form">
+            <button class="search-btn">
+              <img src="/assets/svg/search.svg" alt="magnyfing glass" />
+              <span>Search games, hardware, news, etc</span>
+            </button>
+            <!---Search bar dropdown-->
+            <div class="searchbar-dropdown">All Categories</div>
+            <div class="caret-down">
+              <img src="/assets/svg/arrow_down.svg" alt="dropdown" />
+            </div>
           </form>
         </div>
+
         <div class="top-nav right">
-          <a href="">
-            <span>
-              <svg></svg>
-            </span>
-            <span>Support</span>
+          <a href="https://en-americas-support.nintendo.com" class="btn">
+            <span class="btn-icon"
+              ><img src="/assets/svg/support.svg" alt="supporto"
+            /></span>
+            <span class="btn-text">Support</span>
           </a>
-          <a href="">
-            <span>
-              <svg></svg>
+          <a href="https://www.nintendo.com/wish-list/" class="btn">
+            <span class="btn-icon">
+              <img src="/assets/svg/wish_list.svg" alt="cuore wish list" />
             </span>
-            <span>Wish List</span>
+            <span class="btn-text">Wish List</span>
           </a>
-          <a href="">
-            <span>
-              <svg></svg>
+          <a href="https://www.nintendo.com/cart/" class="btn">
+            <span class="btn-icon">
+              <img src="/assets/svg/cart.svg" alt="carrello" />
             </span>
-            <span>Cart</span>
+            <span class="btn-text">Cart</span>
           </a>
-          <button>
-            <span>
-              <svg></svg>
+          <button class="btn user">
+            <span class="btn-icon">
+              <img src="/assets/svg/log_in.svg" alt="log-in" />
             </span>
-            <span> Log in / Sign up </span>
+            <span class="btn-text"> Log in / Sign up </span>
           </button>
         </div>
       </div>
+
       <div class="bottom-nav">
         <div class="bottom-nav main">
           <button>
             <span>
-              <svg></svg>
+              <img src="/assets/svg/my_nintendo.svg" alt="cappello di mariio" />
             </span>
             <span> My Nintendo Store</span>
             <span>
-              <svg></svg>
+              <img src="/assets/svg/arrow_down.svg" alt="dropdown" />
             </span>
           </button>
           <button>
             <span>
-              <svg></svg>
+              <img src="/assets/svg/games.svg" alt="frecce direzionali" />
             </span>
             <span> Games </span>
             <span>
-              <svg></svg>
+              <img src="/assets/src/arrow_down.svg" alt="dropdown" />
             </span>
           </button>
           <button>
             <span>
-              <svg></svg>
+              <img
+                src="/assets/svg/nintendo_switch.svg"
+                alt="nintendo switch"
+              />
             </span>
             <span> Nintendo Switch </span>
             <span>
-              <svg></svg>
+              <img src="/assets/svg/arrow_down.svg" alt="dropdown" />
             </span>
           </button>
           <a class="button-link" href="">
             <!-- l'href è la sezione news del sito-->
             <span>
-              <svg></svg>
+              <img src="/assets/svg/news.svg" alt="news" />
             </span>
             <span> News and Events </span>
           </a>
           <button>
             <span>
-              <svg></svg>
+              <img src="/assets/svg/play_nintendo.svg" alt="stella" />
             </span>
             <span> Play Nintendo </span>
             <span>
-              <svg></svg>
+              <img src="/assets/svg/arrow_down.svg" alt="dropdown" />
             </span>
           </button>
         </div>
