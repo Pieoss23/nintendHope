@@ -222,7 +222,19 @@ opacity:0.2;
     /* /////////////////////// @@@@@ RESPONSIVE NEWS SECTION VINCENZO @@@@@ /////////////////////// */
 
 @media screen and (max-width: 1000px) {
-    
+  
+    p {
+    font-size:14px;
+    }
+
+    h3 {
+    font-size:16px;
+    }
+
+    .news-box-readmore a {
+    font-size:14px;
+    }
+  
     #news_section_01 {
     display: flex;
     flex-direction: column;
