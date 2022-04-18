@@ -1,24 +1,305 @@
 * {
-
 margin:0;
 padding:0;
 box-sizing: border-box;
-
 }
 
 :root {
-
-
 --first-color:#e60012; 
 --second-color:#9d1f1b;
 --third-color:#484848;  
 --border-radius: 0.3rem;
-
+--background-img: url('../assets/img/luigi.png');
+--background-body: #ffffff;
 }
 
 body {
-
-font-family: 'Mulish', sans-serif;
+background-color: var(--background-body);
+font-family: 'Montserrat', sans-serif;  
+/* font-family: 'Mulish', sans-serif; */
 font-size:16px;
 color:var(--third-color);
+}  
+
+
+input:checked,
+input:checked + * {
+--first-color:#5ebc42; 
+--second-color:#25592b;
+--third-color:#484848; 
+--background-img: url('../assets/img/mario.png');
+}
+
+input[type="checkbox"] {
+-webkit-appearance: none;
+background-image: var(--background-img);
+background-repeat: no-repeat;
+background-size: cover;
+position: fixed;
+z-index: 900;
+bottom:50px;
+right: 50px;
+width: 74px;
+height: 100px;
+cursor: pointer;
+}
+
+
+                            /* /////////////////////// NEWS SECTION VINCENZO /////////////////////// */
+
+
+
+
+#news_section_01 {
+
+display:flex;
+width:80vw;
+max-width:1200px;
+margin:0 auto;
+justify-content: space-between;
+}
+
+.news-box-big-01 {
+width:48%;
+max-width:590px;
+padding-bottom:30px;
+}
+
+.news-box-big-02 {
+width:48%;
+max-width:590px;
+padding-bottom:30px;
+}
+
+.news-mini-box-container {
+
+display:flex;
+width:80vw;
+max-width:1200px;
+margin:0 auto;
+justify-content: space-between;
+margin-top:50px;
+margin-bottom:50px;
+flex-wrap: wrap;
+}
+
+
+#news_title_section,
+#char_title_section {
+display:flex;
+max-width:1200px;
+width:80vw;
+margin:0 auto;
+padding:30px 0;
+}
+
+.news-box-container {
+display:flex;
+width:80vw;
+max-width:1200px;
+margin:0 auto;
+padding:30px 0;
+}
+
+
+.news-box-mini {
+max-width:250px;
+width:30vw;
+display:flex;
+flex-direction: column;
+margin-bottom: 30px;
+}
+
+.news-box-header-cover img {
+width:100%;
+height:auto;
+background-size: cover;
+border-radius: var(--border-radius);
+transition: all .2s ease-in-out;
+}
+
+.news-box-header-cover img:hover {
+opacity: 0.8;
+}
+
+.news-box-header-title {
+padding:10px 0px 10px 0px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.news-box-header-date {
+padding:20px 0px 10px 0px;
+font-size:16px;
+font-weight: 200;
+}
+
+.news-box-content-description {
+padding:10px 0px 10px 0px;
+font-size:16px;
+line-height: 26px;
+font-weight: 200;
+}
+
+.news-box-readmore {
+padding:10px 0px 10px 0px;
+margin-top:auto;
+}
+
+.news-box-readmore a {
+text-decoration: underline 2px;
+color:var(--first-color);
+font-weight: 700;
+text-underline-offset: 5px;
+transition: all .2s ease-in-out;
+}
+
+.news-box-readmore a:hover {
+text-decoration: underline 2px;
+color:var(--second-color);
+font-weight: 700;
+text-underline-offset: 5px;
+}
+
+.news-box-header-title a {
+color:var(--third-color);
+text-decoration: none;
+}
+
+.news-box-header-title h3 {
+font-weight: 600;  
+letter-spacing: 0.3px;
+}
+
+.news-box-header-title a:hover {
+color:var(--first-color);
+text-decoration: none;
+transition: all .2s ease-in-out;
+}
+
+.news-btn-container {
+display:flex;
+width:80vw;
+max-width:1200px;
+margin:0 auto;
+padding:30px 0;
+}
+
+.news-btn {
+width:280px;
+background-color: var(--first-color);
+border-radius:var(--border-radius);
+color:#fff;
+border-style: none;
+padding:20px 40px;
+display:flex;
+transition: all .2s ease-in-out;
+justify-content:center;
+}
+
+.news-btn:hover {
+width:280px;
+background-color: var(--second-color);
+border-radius:var(--border-radius);
+color:#fff;
+border-style: none;
+padding:20px 40px;
+display:flex;
+justify-content:center;
+}
+
+.news-btn-svg {
+margin-right:20px;
+}
+
+.news-hr {
+margin-top:50px; 
+margin-bottom: 50px;
+border-top: 1px solid var(--third-color);
+opacity:0.2;
+}
+
+    /* /////////////////////// @@@@@ RESPONSIVE NEWS SECTION VINCENZO @@@@@ /////////////////////// */
+
+@media screen and (max-width: 1000px) {
+    
+    #news_section_01 {
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    margin:0 auto;
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom:30px;        
+    }
+    
+    .news-box-big-01 {
+    max-width:800px;
+    width:80vw;
+    margin:0 auto;
+    padding-bottom:30px;
+    }
+                
+    .news-box-big-02 {
+    max-width:800px;
+    width:80vw;
+    margin:0 auto;
+    padding-bottom:30px;
+    }
+
+    .news-mini-box-container {
+    display:flex;
+    flex-wrap:wrap;
+    width:80vw;
+    max-width:900px;
+    }
+    
+    .news-box-mini {
+    max-width:300px;
+    width:35vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom: 30px;
+    }
+    
+    .news-btn-container {
+    width:80%;
+    max-width:900px;
+    display:flex;
+    margin:0 auto;
+    }
+    
+    #news_title_section,
+    #char_title_section {
+    display:flex;
+    width:80vw;
+    max-width:800px;
+    margin:0 auto;
+    }
+    
+    .news-btn {
+    background-color: var(--first-color);
+    border-radius:var(--border-radius);
+    color:#fff;
+    margin:0 auto;
+    width:80vw;
+    max-width:800px;
+    border-style: none;
+    padding:20px 40px;
+    display:flex;
+    }
+    
+    .news-btn:hover {
+    width:80vw;
+    max-width:800px;
+    background-color: var(--second-color);
+    border-radius:var(--border-radius);
+    color:#fff;
+    border-style: none;
+    padding:20px 40px;
+    display:flex;
+    justify-content:center;
+    }
+
 }
