@@ -315,3 +315,138 @@ opacity:0.2;
     }
 
 }
+
+
+                             /* /////////////////////// FINE NEWS SECTION VINCENZO /////////////////////// */
+
+
+                            /* /////////////////////// FEATURED SECTION TIZIANO /////////////////////// */
+
+
+.featured-hr {
+
+    margin-top:50px; 
+    margin-bottom: 50px;
+    border-top: 1px solid var(--third-color);
+    opacity:0.2;
+    }
+    
+    #featured-title {
+    margin:50px 50px;
+    }
+    
+    
+    .featured-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    gap: 10px; /*gap:30px senza freccia*/
+    }
+   
+    
+    .featured-card {
+    /* width:20vw; */
+    width:260px;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-self:normal;
+    border: 1px solid #dadada;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.3s;
+     }
+    
+    
+    .featured-card:hover {
+    margin-top: -20px;
+    transition: 0.5s;
+    cursor: pointer;
+   }
+    
+    .featured-card-img img  {
+    width:100%;
+    height:100%;
+    background-size: cover;
+    border-top-left-radius:0.2rem;
+    border-top-right-radius:0.2rem;
+    }
+
+    
+    .featured-card-title {
+    padding:10px;
+    display: flex;
+    margin-top:auto;
+    }
+    
+    .featured-card-link {
+    padding:20px 10px;
+    /* margin-top:auto; */
+    }
+    
+    
+    .featured-card-link a {
+    color:var(--third-color);
+    text-decoration: underline 2px var(--first-color);
+    
+    font-weight: 200;
+    }
+    
+    .featured-card-title a {
+    color:var(--third-color);
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    }
+    
+    
+    
+    
+    .featured-card-title, a:hover {
+    
+    color:var(--first-color);
+    text-decoration: none;
+    }
+    
+    .featured-card-title h3 {
+    font-weight: 600;  
+    letter-spacing: 0.3px;
+    }
+   
+
+
+
+
+/*Button Next Page*/
+
+.swiper_button  {
+    position:absolute;
+   transition: all 300ms ease-in-out 25ms;
+   color: rgb(218, 218, 218);
+    border: none;
+    cursor: pointer;
+    outline-offset: -2px;
+    transform: translateZ(0px);
+    z-index: 10;
+    border-radius: 0px 0.25rem 0.25rem 0px;
+    opacity: 0;
+    pointer-events:none ;
+    
+    
+}
+
+#mouse_over{
+    display: block;
+    opacity: 0;
+}
+
+
+#mouse_over:hover{
+
+    opacity:1;
+}
+
+
+                      /* /////////////////////// FINE FEATURED SECTION TIZIANO /////////////////////// */
+
