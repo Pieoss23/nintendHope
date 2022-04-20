@@ -1,5 +1,5 @@
 
-@font-face {
+/* @font-face {
   font-family: "museo-sans";
   src: url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3);
   font-weight: 700;
@@ -9,7 +9,7 @@
   src: url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3);
   font-weight: 300;
 }
-
+ */
 
 * {
 margin:0;
@@ -24,8 +24,6 @@ box-sizing: border-box;
 --border-radius: 0.3rem;
 --background-img: url('../assets/img/luigi.png');
 --background-body: #ffffff;
---p-color:#484848;
---h-color:#484848;
 }
 
 body {
@@ -1282,7 +1280,7 @@ opacity:0.2;
             }
             
             
-            .btn {
+            .kirby-button  {
             
             background-color: var(--first-color);
             border-radius:var(--border-radius);
@@ -1295,7 +1293,7 @@ opacity:0.2;
             justify-content:center;
             }
             
-            .btn:hover {
+            .kirby-button:hover {
             background-color: var(--second-color);
             }
             
