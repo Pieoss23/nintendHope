@@ -57,11 +57,20 @@ body {
     border-left: none;
 }
 
-.map_site_section li:hover{
-    text-decoration: underline;
+.map_site_section a:hover{
+    text-decoration: underline 2px;
     text-underline-offset: 5px;
     color: var(--second-color);
-    transition: 1.5s;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.map_site_section a h3:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: var(--third-color);
+    font-weight: bold;
+    transition: .2s;
 
 }
 
@@ -109,9 +118,16 @@ body {
 .footer_legal_link__main_links a {
     text-decoration: none;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 1rem;
     font-weight: 800;
+}
 
+.footer_legal_link__main_links a:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: white;
+    font-weight: bold;
+    transition: .2s;
 }
 
 .footer_legal_link__change_region {
@@ -119,6 +135,10 @@ body {
     align-items: center;
     font-weight: 500;
     cursor: pointer;
+}
+
+.footer_legal_link__change_region span{
+    width: 100px;
 }
 
 .footer_legal_link__change_region > svg {
@@ -160,12 +180,13 @@ body {
 }
 
 .general_btn {
-    width: 200px;
+    width: 100%;
     background-color: var(--first-color);
     border-radius: var(--border-radius);
     color: #fff;
     border-style: none;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
+    font-size: large;
     display: flex;
     transition: all .2s ease-in-out;
     justify-content: center;
@@ -173,12 +194,12 @@ body {
 
 .general_btn:hover {
 
-    width: 200px;
+    width: 100% ;
     background-color: var(--second-color);
     border-radius: var(--border-radius);
     color: #fff;
     border-style: none;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     display: flex;
     justify-content: center;
 }
@@ -200,14 +221,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0 3rem 0 ;
+    margin: 3rem auto 3rem auto ;
 }
 
 .gaming_system_section div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0 3rem 0 ;
+    margin: 3rem auto 3rem auto ;
 }
 
 .gaming_system_section div span{
