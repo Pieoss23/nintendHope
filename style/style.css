@@ -874,3 +874,82 @@ opacity:0.2;
     
     
         }
+
+
+
+        /*Winjoe*/
+        .banner-container{
+            display: flex;
+            width: 90%;
+            height: 500px;
+            margin:0 auto;
+            flex-direction: column;
+        
+            
+        }
+        
+        .banner-kirby img{
+            object-fit: cover;
+            border-radius:var(--border-radius) ;
+            display:flex;
+            width: 100%;
+        }
+        
+        .banner-kirby{
+            margin:0 auto;
+            display:flex;
+            width: 100%;
+        }
+        
+        
+        
+        .banner-right-section{
+            display: flex;
+            align-items: center;
+        }
+        
+        .banner-right-section p{
+            font-size: 12px;
+            line-height: 25px;
+        }
+        
+        .section-inferiore {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .banner-right-section svg{
+            margin-right: 20px;
+        }
+        
+        
+        
+        
+        .title-btn {
+        align-items: baseline;
+        display:flex;
+        }
+        .title-btn a{
+            text-decoration:none;
+        }
+        
+        
+        .btn {
+        
+        background-color: var(--first-color);
+        border-radius:var(--border-radius);
+        margin-left:50px;
+        color:#fff;
+        border-style: none;
+        padding:20px 40px;
+        display:flex;
+        transition: all .2s ease-in-out;
+        justify-content:center;
+        }
+        
+        .btn:hover {
+        
+        
+        background-color: var(--second-color);
+        }
