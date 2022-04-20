@@ -15,8 +15,7 @@ box-sizing: border-box;
 
 body {
 background-color: var(--background-body);
-font-family: 'Montserrat', sans-serif;  
-/* font-family: 'Mulish', sans-serif; */
+font-family: 'Montserrat', sans-serif;
 font-size:16px;
 color:var(--third-color);
 }  
@@ -42,6 +41,11 @@ right: 50px;
 width: 74px;
 height: 100px;
 cursor: pointer;
+}
+
+
+h2 {
+    font-weight:500;
 }
 
 
@@ -332,18 +336,25 @@ opacity:0.2;
     }
     
     #featured-title {
-    margin:50px 50px;
+    /* margin:50px 50px; */
+    width:80vw;
+    max-width:1200px;
+    margin:0 auto;
+    padding-bottom:50px;
     }
-    
     
     .featured-container {
+    max-width:1200px;
+    width:80vw;
+    margin:0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height:auto;
-    gap: 10px; /*gap:30px senza freccia*/
+    gap:10px;
+    /* gap: 10px; gap:30px senza freccia */
     }
-   
+
     
     .featured-card {
     /* width:20vw; */
@@ -437,16 +448,429 @@ opacity:0.2;
 }
 
 #mouse_over{
+    all:unset;
     display: block;
     opacity: 0;
+    width:200px;
+    padding:20px;
+    border-radius: var(--border-radius);
+    background-color:#5e5e5e54;
+    transition: all .2s ease-in-out;
+    cursor:pointer;
+    position:relative;
+
+}
+
+#mouse_over svg{
+    color: rgb(255, 255, 255);
 }
 
 
 #mouse_over:hover{
 
     opacity:1;
+    color:#484848;
 }
 
 
                       /* /////////////////////// FINE FEATURED SECTION TIZIANO /////////////////////// */
 
+
+                     /* /////////////////////// INIZIO FOOTER SECTION PIETRO /////////////////////// */
+
+
+
+.map_site_section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 5% 0 5%;
+}
+
+.map_site_section li {
+    list-style: none;
+    font-size: 16px;
+    margin: 1.5rem;    
+}
+
+
+.map_site_section a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+.map_site_section h3{
+    color: var(--third-color);
+}
+
+.map_site_section ul{
+    border-left:  1px solid rgb(218, 218, 218);
+}
+
+.map_site_section div:first-child ul {
+    border-left: none;
+}
+
+.map_site_section a:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+    color: var(--second-color);
+    /* font-weight: bold; */
+    transition: .2s;
+}
+
+.map_site_section a h3:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: var(--third-color);
+    /* font-weight: bold; */
+    transition: .2s;
+
+}
+
+
+.copyright_section {
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem 2rem 1rem;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.footer_legal_link {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.8rem;
+    align-items: center;
+    color: #fff;
+    height: 2rem;
+}
+
+
+.footer_legal_link__main_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_legal_link__main_links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+    font-weight: 800;
+}
+
+.footer_legal_link__main_links a:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: white;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.footer_legal_link__change_region {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer_legal_link__change_region span{
+    width: 100px;
+}
+
+.footer_legal_link__change_region > svg {
+    margin-right: 10px;
+    width: 30%;
+}
+
+.certified_logo {
+   
+    height: 86px;
+    width: 64px;
+}
+
+.certified_section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    margin: 0 5%;
+}
+
+
+                                /* /////////////////////// FINE FOOTER SECTION PIETRO /////////////////////// */
+
+
+
+
+                                /* /////////////////////// INIZIO BANNER SECTION PIETRO /////////////////////// */
+.gaming_system_section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.gaming_system_section img {
+    background-size: cover;
+    width: 100%;
+}
+
+.gaming_system_section_image {
+    width:100%;
+    object-fit: cover;
+    background-color: var(--first-color);
+    border-radius: var(--border-radius);
+
+}
+
+.online_store_section {
+    width: 80vw;
+    max-width:1200px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    padding:10px;
+}
+
+.online_store_section img{
+    background-size: cover;
+    width: 100%;
+}
+
+.online_store_section p {
+    font-size:1.2rem;
+    font-weight: 600;
+}
+
+.gaming_system_section a {
+    text-decoration: none;
+}
+
+.online_store_section a {
+    text-decoration: none; 
+}
+
+.general_btn {
+    width:250px;
+    background-color: var(--first-color);
+    border-radius:var(--border-radius);
+    color:#fff;
+    border-style: none;
+    padding:20px 40px;
+    display:flex;
+    transition: all .2s ease-in-out;
+    justify-content:center;
+    }
+
+    .general_btn:hover {
+
+        width:250px;
+        background-color: var(--second-color);
+        border-radius:var(--border-radius);
+        color:#fff;
+        border-style: none;
+        padding:20px 40px;
+        display:flex;
+        justify-content:center;
+    }
+
+.online_store_section {
+    height: 100%;
+}
+
+.online_store_section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto 3rem auto ;
+}
+
+.gaming_system_section {
+    width:80vw;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.gaming_system_description {
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.gaming_system_title {
+    padding:30px 0px;
+    width:80vw;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.gaming_system_section div span{
+    font-size: 20px;
+}
+
+.online_store_section div span{
+    font-size: 20px;
+}
+
+.footer_map_ESRB_section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5% 0 5%;
+}
+
+
+.social_section__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    gap: 2rem;
+}
+
+.social_section_footer {
+    display:flex;
+    width:100vw;
+    padding:30px;
+    background-color: var(--first-color);
+}
+
+.social_container {
+    display:flex;
+    margin:0 auto;
+    padding:10px;
+    width:90vw;
+    max-width:1500px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* /////////////////////// FINE BANNER SECTION PIETRO /////////////////////// */
+
+
+/* /////////////////////// INIZIO BANNER SECTION PIETRO-VINCENZO /////////////////////// */
+
+
+.online-store-title {
+
+    max-width:1200px;
+    width:80vw;
+    height:70px;
+    display:flex;
+    margin:0 auto;
+    }
+    
+    
+    .online-store-container {
+        max-width:1200px;
+        width:80vw;
+        height:150px;
+        display: flex;
+        margin:0 auto;
+        padding:30px;
+        background-color: var(--first-color);
+        border-radius: var(--border-radius);
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+
+
+        .gaming_system_description p{
+        font-size:1.2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        }
+        
+        .online-store-icon-big {
+        color:#fff;
+        width: 50%;
+        height: auto;
+        max-height: 3.75rem;
+        }
+        
+        .icon-store {
+        display:flex;
+        width: 50%;
+        height: auto;
+        color:var(--third-color);
+        opacity: 0.3;
+        }
+    
+        .online-store-icon-little {
+            display:flex;
+            width: 50%;
+        }
+    
+    
+        @media screen and (max-width: 1100px) {
+    
+            .online-store-container {
+                max-width:800px;
+                width:80vw;
+                height:auto;
+                flex-wrap: wrap;
+                display:flex;
+                flex-direction: column;
+                margin:0 auto;
+                justify-content: center;
+                align-items: center;
+                }
+    
+    
+                .online-store-icon-big {
+                    width: 20vw;
+                    max-width:100px;
+                    display:flex;
+                    flex-direction: column;
+                    padding-bottom:30px;
+                    justify-content: center;
+                    align-items: center;
+                    margin:0 auto;
+                    }
+                    
+                    .icon-store {
+                    width: 10vw;
+                    max-width:50px;
+                    display:flex;
+                    padding-bottom:10px;
+                    padding-top:30px;
+                    justify-content: center;
+                    align-items: center;
+                    }
+                
+                    .online-store-icon-little {
+                        width:20vw;
+                        max-width:20px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .online_store_section {
+                        display:flex;
+                        flex-direction: column;
+                    }
+
+
+                    .general_btn {
+                        width:80vw;
+                        
+                        }
+                    
+                        .general_btn:hover {
+                    
+                            width:80vw;
+                        }
+
+
+                        .gaming_system_description {
+                            display:flex;
+                            flex-direction: column;
+                        }
+    
+    
+        }
