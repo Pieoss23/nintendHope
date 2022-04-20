@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --first-color: #e60012;
+    --second-color: #9d1f1b;
+    --third-color: #484848;
+    --border-radius: 0.3rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid;
+    color: rgba(214, 214, 214, 0.6);
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.map_site_section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 5% 0 5%;
+}
+
+.map_site_section li {
+    list-style: none;
+    font-size: 16px;
+    margin: 1.5rem;    
+}
+
+
+.map_site_section a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+.map_site_section h3{
+    color: var(--third-color);
+}
+
+.map_site_section ul{
+    border-left:  1px solid rgb(218, 218, 218);
+}
+
+.map_site_section div:first-child ul {
+    border-left: none;
+}
+
+.map_site_section a:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+    color: var(--second-color);
+    font-weight: bold;
+    transition: .2s;
+}
+
+.map_site_section a h3:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: var(--third-color);
+    font-weight: bold;
+    transition: .2s;
+
+}
+
+.social_section {
+    background-color: var(--first-color);
+    padding: 2.25rem 10rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.social_section a:link {
+    text-decoration: none;
+}
+
+.copyright_section {
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem 2rem 1rem;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.footer_legal_link {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.8rem;
+    align-items: center;
+    color: #fff;
+    height: 2rem;
+}
+
+
+.footer_legal_link__main_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_legal_link__main_links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+    font-weight: 800;
+}
+
+.footer_legal_link__main_links a:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: white;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.footer_legal_link__change_region {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer_legal_link__change_region span{
+    width: 100px;
+}
+
+.footer_legal_link__change_region > svg {
+    margin-right: 10px;
+    width: 30%;
+}
+
+.certified_logo {
+   
+    height: 86px;
+    width: 64px;
+}
+
+.certified_section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    margin: 0 5%;
+}
+
+.gaming_system_section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.gaming_system_section img {
+    background-size: cover;
+    width: 100%;
+}
+
+.online_store_section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.online_store_section img{
+    background-size: cover;
+    width: 100%;
+}
+
+.general_btn {
+    width: 100%;
+    background-color: var(--first-color);
+    border-radius: var(--border-radius);
+    color: #fff;
+    border-style: none;
+    padding: .5rem 1rem;
+    font-size: large;
+    display: flex;
+    transition: all .2s ease-in-out;
+    justify-content: center;
+}
+
+.general_btn:hover {
+
+    width: 100% ;
+    background-color: var(--second-color);
+    border-radius: var(--border-radius);
+    color: #fff;
+    border-style: none;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.social_section__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    gap: 2rem;
+}
+
+.online_store_section {
+    height: 100%;
+}
+
+.online_store_section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto 3rem auto ;
+}
+
+.gaming_system_section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto 3rem auto ;
+}
+
+.gaming_system_section div span{
+    font-size: 20px;
+}
+
+.online_store_section div span{
+    font-size: 20px;
+}
+
+
+.online_store_section h2 {
+    padding: 2rem 2rem 2rem 0;
+}
+
+.gaming_system_section h2 {
+    padding: 2rem 2rem 2rem 0;
+}
+
+.footer_map_ESRB_section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5% 0 5%;
+}
+
