@@ -79,6 +79,7 @@ h2 {
   width: 100vw;
   height: 96px;
   z-index: 2000;
+  background-color: white;;
 }
 .mobile-nav {
   display: none;
@@ -107,11 +108,11 @@ h2 {
 .nintendo-svg {
   width: 105px;
   height: 52px;
-  background-color: var(--secondary-color);
+  background-color: var(--first-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--tertiary-color);
+  color: white;
 }
 .container-form {
   display: flex;
@@ -141,7 +142,7 @@ h2 {
   color: var(--primary-color);
 }
 .search-btn:hover {
-  color: var(--secondary-color);
+  color: var(--first-color);
 }
 
 .caret-down {
@@ -158,7 +159,7 @@ h2 {
 }
 
 .searchbar-dropdown:hover {
-  color: var(--secondary-color);
+  color: var(--first-color);
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
@@ -186,7 +187,7 @@ h2 {
   color: inherit;
 }
 .btn:hover {
-  color: var(--secondary-color);
+  color: var(--first-color);
   transition: all 200ms ease-in-out 0s;
 }
 
@@ -216,11 +217,12 @@ h2 {
   background-color: inherit;
   z-index: auto;
 }
-.main {
+/* .main {
   display: flex;
   gap: 1rem;
   padding: 2px 0px 0px;
-}
+} */
+
 .btn-bottom {
   display: inline-flex;
   align-items: center;
@@ -233,7 +235,7 @@ h2 {
 }
 
 .btn-bottom:hover {
-  color: var(--secondary-color);
+  color: var(--first-color);
   transition: all 200ms ease-in-out 0s;
 }
 .btn-text-bottom {
@@ -242,7 +244,7 @@ h2 {
   margin: 0;
 }
 .btn-news {
-  font-weight: inherit;
+  /* font-weight: inherit; */
 }
 
 @media screen and (max-width: 1020px) {
@@ -261,7 +263,7 @@ h2 {
     padding-right: 1rem;
     height: 46px;
     z-index: 2000;
-    background-color: var(--secondary-color);
+    background-color: var(--first-color);
     color: var(--tertiary-color);
   }
   .nintendo-logo {
