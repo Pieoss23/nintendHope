@@ -90,7 +90,7 @@ h2 {
   align-items: center;
   height: 52px;
   border-bottom: 1px solid rgb(218, 218, 218);
-  background-color: var(--tertiary-color);
+  background-color: white;
 }
 .left {
   display: flex;
@@ -108,7 +108,7 @@ h2 {
 .nintendo-svg {
   width: 105px;
   height: 52px;
-  background-color: var(--first-color);
+  background-color:var(--first-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,7 +264,7 @@ h2 {
     height: 46px;
     z-index: 2000;
     background-color: var(--first-color);
-    color: var(--tertiary-color);
+    color: white;
   }
   .nintendo-logo {
     display: inline-flex;
@@ -308,20 +308,20 @@ h2 {
     background: transparent;
     cursor: pointer;
     align-items: center;
-    color: var(--primary-color);
+    color: var(--third-color);
   }
   .bottom-link:hover {
-    color: var(--secondary-color);
+    color: var(--first-color);
     transition: all 200ms ease-in-out 0s;
   }
   .bottom-btn {
     margin-top: -1rem;
     width: 60px;
     height: 60px;
-    background: var(--secondary-color);
+    background: var(--first-color);
     border: medium none;
     border-radius: 50%;
-    color: var(--tertiary-color);
+    color: white;
     cursor: pointer;
   }
 }
